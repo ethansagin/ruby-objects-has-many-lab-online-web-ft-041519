@@ -12,6 +12,7 @@ class Author
   
   def add_post(a_post)
     new_post = Post.new(a_post)
+    new_post << @posts
     new_post.artist = self
   end
   
